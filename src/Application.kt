@@ -61,7 +61,7 @@ fun Application.module(testing: Boolean = false) {
 
     routing {
         get("/") {
-            call.respondText("This is an API made in Kotlin!")
+            call.respondText("The Kotlingerless Quiz Backend")
         }
 
     install(Routing) {
