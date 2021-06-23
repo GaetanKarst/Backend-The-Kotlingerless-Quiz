@@ -11,6 +11,7 @@ import io.ktor.response.respond
 import io.ktor.response.respondText
 import kotlinx.serialization.Serializable
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Object
+import io.github.cdimascio.dotenv.Dotenv
 import io.ktor.server.netty.*
 import io.ktor.util.Identity.encode
 import jdk.jfr.ContentType
@@ -18,6 +19,7 @@ import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.encodeToJsonElement
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
+import io.github.cdimascio.dotenv.dotenv
 
 @Serializable
 data class PlayerScore(val id: Int? = null, val name: String, val score: Int)
@@ -45,7 +47,7 @@ fun Application.module(testing: Boolean = false) {
 
     // Connection to Database
     Database.connect("jdbc:postgresql://localhost/scores", driver = "org.postgresql.Driver",
-        user = "gaetan", password = "gaetan")
+        user = dotenv().get("user"), password = dotenv().get("password"))
 
     // Database Migration + Seeding
     transaction {
