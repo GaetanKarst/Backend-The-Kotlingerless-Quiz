@@ -12,6 +12,17 @@ This repository consists of the backend of the Kotlingerless Quiz project contai
 The Kotlingerless Quiz is a simple quiz made using Kotlin and android API. Players have to go through a series of questions in order to score points.
 At the end of the quiz, is displayed the total score of the current players along with a scoreboard of players' scores stored in a database.
 
+## Environement
+
+To connect the database I decided to opt for an approach similar to Javascript/Typescript in order to keep environment variables safe.
+
+Create a **.env** file and insert: 
+
+```
+user= // your database user name
+password= // your database user password
+```
+
 ## Authors
 
 - **Gaetan Karst** - _Initial work_ - [GaetanKarst](https://github.com/GaetanKarst)
