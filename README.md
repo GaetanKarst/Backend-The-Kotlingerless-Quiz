@@ -1,9 +1,9 @@
 # Bachend-The-Kotlingerless-Quiz
 
-**[Main Repository (Mobile App)](https://github.com/GaetanKarst/The-Kotlingerless-Quiz)**
+**[Main Repository (Mobile App)](https://github.com/GaetanKarst/The-Kotlingerless-Quiz)**  
 *This was created during my time as a student at Code Chrysalis*
 
-![Screen Shot 2021-06-23 at 0 03 29](https://user-images.githubusercontent.com/66731438/122949680-d1111b80-d3b6-11eb-90d0-e63e6b7fc456.png)
+![Screen Shot 2021-06-23 at 0 03 29](https://user-images.githubusercontent.com/66731438/122949680-d1111b80-d3b6-11eb-90d0-e63e6b7fc456.png) 
 
 ## Introduction
 
